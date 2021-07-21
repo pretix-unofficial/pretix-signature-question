@@ -1,0 +1,8 @@
+{% load static %}
+{% load compress %}
+
+{% compress js %}
+    <script src="{% static "pretix_signature_question/jSignature.min.js" %}"></script>
+    <script src="{% static "pretix_signature_question/main.js" %}"></script>
+{% endcompress %}
+
