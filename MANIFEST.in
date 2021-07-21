@@ -1,0 +1,5 @@
+recursive-include pretix_signature_question/static *
+recursive-include pretix_signature_question/templates *
+recursive-include pretix_signature_question/locale *
+include LICENSE
+exclude .gitlab-ci.yml
