@@ -11,8 +11,8 @@ Configuration / Usage
 Each event can enable this plugin in Settings > Plugins > Customization.
 
 Once the plugin is enabled you can add a question with type *file* to a ticket.
-The name of the question have to contain *signature*.
-Now the upload dialog disappears and a field to draw a signature is shown.
+The name of the question must contain *signature*.
+Instead of the upload dialog the signature field is displayed.
 
 Development setup
 -----------------
