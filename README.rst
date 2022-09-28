@@ -5,6 +5,15 @@ This is a plugin for `pretix`_.
 
 Allows to draw a signature
 
+Configuration / Usage
+---------------------
+
+Each event can enable this plugin in Settings > Plugins > Customization.
+
+Once the plugin is enabled you can add a question with type *file* to a ticket.
+The name of the question have to contain *signature*.
+Now the upload dialog disappears and a field to draw a signature is shown.
+
 Development setup
 -----------------
 
