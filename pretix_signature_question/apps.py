@@ -8,6 +8,7 @@ except ImportError:
 
 
 class PluginApp(PluginConfig):
+    default = True
     name = "pretix_signature_question"
     verbose_name = "Signature Question"
 
