@@ -1,0 +1,43 @@
+[project]
+name = "pretix-signature-question"
+dynamic = ["version"]
+description = "Allows to draw a signature"
+readme = "README.rst"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+keywords = ["pretix"]
+authors = [
+    {name = "pretix team", email = "support@pretix.eu"},
+]
+maintainers = [
+    {name = "pretix team", email = "support@pretix.eu"},
+]
+
+dependencies = [
+
+]
+
+[project.entry-points."pretix.plugin"]
+pretix_signature_question = "pretix_signature_question:PretixPluginMeta"
+
+[project.entry-points."distutils.commands"]
+build = "pretix_plugin_build.build:CustomBuild"
+
+[build-system]
+requires = [
+    "setuptools",
+    "pretix-plugin-build",
+]
+
+[project.urls]
+homepage = "https://github.com/pretix-unofficial/pretix-signature-question"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "pretix_signature_question.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["pretix*"]
+namespaces = false
